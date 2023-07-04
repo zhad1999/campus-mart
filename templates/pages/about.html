@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %} About {% endblock %}
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">About Woxsen Campus Mart</h1>
+          <p class="lead">This application is for Woxsen University Students you can get the designed products, Gadgets, accesories, where you can buy, sell, rent your Products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{%url 'index'%}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2></h2>
+          <p>Welcome to Woxsen Campus Mart, powered by the AI Research Centre! Our website page is designed to facilitate the buying and selling of pre-owned products exclusively within the vibrant Woxsen campus community.</p>
+<p>At Woxsen Campus Mart, we understand the value of sustainability and the importance of giving pre-owned items a second life. Whether you're a student, faculty member, or staff member at Woxsen, this platform provides a convenient and efficient way to connect with others on campus who are interested in buying or selling their gently used items.</p>
+
+<p>Our main objective is to foster a culture of resourcefulness, affordability, and community engagement within the Woxsen campus. By encouraging the exchange of second-hand products, we not only contribute to a greener environment by reducing waste but also promote a sense of camaraderie among the Woxsen community members.</p>
+
+<p>How does it work? As a registered user of Woxsen Campus Mart, you can create listings to sell your pre-owned items. Simply upload clear images, provide detailed descriptions, set a reasonable price, and categorize your item appropriately. Potential buyers within the Woxsen campus can browse through the listings and directly connect with you to negotiate the purchase.</p>
+
+<p>On the other hand, if you're looking to buy pre-owned products, you can explore the wide variety of listings available on Woxsen Campus Mart. From textbooks and electronics to furniture and clothing, you'll find a diverse range of items that cater to your needs and budget. Connect with sellers, inquire about the condition of the items, and negotiate prices to strike a deal.</p>
+
+<p>At Woxsen Campus Mart, we prioritize the security and trust of our users. We have implemented a secure messaging system that allows buyers and sellers to communicate safely with their official email id’s. Additionally, we encourage users to provide feedback and ratings after each transaction to maintain accountability and transparency.</p>
+
+<p>Join the Woxsen Campus Mart community today and experience the benefits of sustainable shopping while supporting your fellow Woxsen community members. Together, let's create a campus environment where buying and selling pre-owned products is convenient, economical, and environmentally friendly.</p>
+          <img src="assets/img/about.jpg" alt="">
+          <p class="mt-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">Buy, Sell</h2>
+    <h4>In Woxsen Campus Mart</h4>
+    <hr>
+    <a href="{%url 'listings'%}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+
+{% endblock %}
